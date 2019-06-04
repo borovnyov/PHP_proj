@@ -9,7 +9,7 @@ if (!empty($_GET['time'])) // параметр отсутствует?
 
 	$bel_time = time();
 	$tm = date("d.m.Y")." ".date("H:i:s");
-	if (!fputs($f, "$tm;".$_GET['time'].";".$_GET['temp'].";".$_GET['hum'].";".$_GET['volt'].";".$_GET['batt_life'].";".$_GET['CREG'].";".$_GET['CSQ']."\r\n"))
+	if (!fputs($f, "$tm;".$_GET['time'].";".$_GET['temp'].";".$_GET['hum'].";".$_GET['pressure']."\r\n"))
 		die("ERROR 3");
 
 	fclose($f);
