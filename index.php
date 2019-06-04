@@ -20,9 +20,7 @@
 			<th width="10%" scope="col"><div align="left">Темп., *С</div></th>
 			<th width="10%" scope="col"><div align="left">Влажн., %</div></th>
 			<th width="10%" scope="col"><div align="left">Давл., кПа</div></th>
-			<th width="10%" scope="col"><div align="left">Заряд бат., %</div></th>
-			<th width="10%" scope="col"><div align="left">Базов. станц.</div></th>
-			<th width="10%" scope="col"><div align="left">Уров. сигн., 1/32</div></th>
+			
 		</tr>
 	';
 
