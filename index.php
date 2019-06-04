@@ -59,34 +59,34 @@
 		{
 			//$temp_h = $temp >> 8;
 			//$temp_l = $temp & 0xFF;
-			$temp2 = round((double)($temp >> 8)/2 + (double)($temp & 0x00FF)/512 - 41, 2);
-			echo "<td>$temp2</td>";
+			//$temp2 = round((double)($temp >> 8)/2 + (double)($temp & 0x00FF)/512 - 41, 2);
+			echo "<td>$temp</td>";
 		}
 
 		if ($hum == 0xFFFF)
 			echo "<td>-</td>";
 		else
 		{
-			$hum2 = (double)$hum/16*5.02/4096;
-			$hum2 = round(($hum2 - 0.958)/0.0307, 1);
-			echo "<td>$hum2</td>";
+			//$hum2 = (double)$hum/16*5.02/4096;
+			//$hum2 = round(($hum2 - 0.958)/0.0307, 1);
+			echo "<td>$hum</td>";
 		}
 
 		if ($pressure == 0xFFFF)
 			echo "<td>-</td>";
 		else
 		{
-			$pressure2 = round(((double)$pressure*5.01/(1 << 16) - 0.204)*1000/45.9, 2);
-			echo "<td>$pressure2</td>";
+			//$pressure2 = round(((double)$pressure*5.01/(1 << 16) - 0.204)*1000/45.9, 2);
+			echo "<td>$pressure</td>";
 		}
 		
-		echo "
+		/*echo "
 			
 			<td>$batt_life</td>
 			<td>$CREG</td>
 			<td>$CSQ</td>
  			</tr>
- 		";
+ 		";*/
 	}
 
 	echo "</table>";
